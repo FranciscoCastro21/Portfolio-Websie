@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco Castro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsiveness.css">
+</head>
+<body>
+    <!-- NAVBAR-->
+    <nav id="navBar">
+        <div class="logo">Francisco Castro</div>
+        <div>
+            <ul class="navLinks">
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#education">Education</a></li>
+                <li> <a href="#technologies">Technologies</a></li>
+                <li> <a href="#projects">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- HAMBNAV-->
+    <nav id="hamburgerNav">
+        <div class="logo">Francisco Castro</div>
+        <div class="hamburgerMenu">
+            <div class="hamburgerIcon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menuLinks">
+                <li> <a href="#about" onclick="toggleMenu()">About</a></li>
+                <li> <a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li> <a href="#technologies" onclick="toggleMenu()">Technologies</a></li>
+                <li> <a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li> <a href="#contact" onclick="toggleMenu()">Contact</a></li>
+
+            </div>
+        </div>
+
+       
+    </nav>
+
+    <!-- SECTION 1-->
+    <section id="profile">
+        <div class="sectionPhoto">
+            <img src="./ASSETS/profile-pic.png" alt="Icon of a man">
+        </div>
+        <div class="sectionText">
+           <p class="sectionText1">Hello! I'm</p>
+           <h1 class="title">Francisco Castro</h1>
+           <p class="sectionText2">Computer Programming Student</p>
+           <div class="btnContainer">
+            <button class="btn btn-color-1" onclick="window.open('./ASSETS/resume-example.pdf')">Download Resume</button>
+            <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact</button>
+           </div>
+           <div id="socialsContainer">
+            <img src="./ASSETS/linkedin.png" alt="linkDin Profile" 
+            class="icon" onclick="location.href='https://www.linkedin.com/in/francisco-castro-gc/'"/>
+            <img src="./ASSETS/github.png" alt="GitHub Profile" 
+            class="icon" onclick="location.href='https://github.com/FranciscoCastro21?tab=repositories'"/>
+            </div>
+        </div>
+    </section>
+    <!-- NAVBAR-->
+
+   <script src="script.js"></script>
+</body>
+</html>
